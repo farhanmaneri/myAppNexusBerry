@@ -12,7 +12,7 @@ export default function MenuPage() {
   }
 
   return (
-    <div className='container mb-5'>
+    <div className='container m-1 bg-black'>
       <Header cartCounter={cartCounter}/>
       <CatButtons />
       <Products increment={increment}/>

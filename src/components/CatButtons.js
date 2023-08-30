@@ -3,6 +3,8 @@ import React from "react";
 export default function CatButtons() {
   return (
     <>
+    <div className="cantainer w-100 d-flex justify-content-around">
+
       <button type="button" className="btn btn-primary">
         Primary
       </button>
@@ -21,6 +23,7 @@ export default function CatButtons() {
       <button type="button" className="btn btn-info">
         Info
       </button>
+    </div>
     </>
   );
 }
