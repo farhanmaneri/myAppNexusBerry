@@ -1,29 +1,23 @@
 import React from "react";
-
+import { categories } from "../data/categories";
 export default function CatButtons() {
   return (
     <>
-    <div className="cantainer w-100 d-flex flex-wrap justify-content-around">
+      {categories.map((cat) => {
+                // console.log(cat.title)
 
-      <button type="button" className="btn btn-primary ">
-        Primary
+        <button 
+        type="button" 
+        className={
+          "m-1 btn btn-primary"
+        }
+        key={cat.id} 
+        // onClick={() => onCatSelection(cat.id)}
+      >
+        {cat.title}
       </button>
-      <button type="button" className="btn btn-secondary">
-        Secondary
-      </button>
-      <button type="button" className="btn btn-success">
-        Success
-      </button>
-      <button type="button" className="btn btn-danger">
-        Danger
-      </button>
-      <button type="button" className="btn btn-warning">
-        Warning
-      </button>
-      <button type="button" className="btn btn-info">
-        Info
-      </button>
-    </div>
+      })}
+      
     </>
   );
 }

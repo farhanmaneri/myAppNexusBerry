@@ -10,7 +10,7 @@ export default function KfcCard({ item, increment }) {
           <div className="card-body ">
             <h5 className="card-title">{item.title}</h5>
             <p className="card-text">
-              {item.desc}
+              {item.disc}
             </p>
 <h5 style={{ fontWeight:'bold' }}>Rs. {item.price}</h5>
             <button className="btn btn-primary" onClick={increment}>
@@ -21,4 +21,4 @@ export default function KfcCard({ item, increment }) {
       </div>
     </>
   )
-}
+};

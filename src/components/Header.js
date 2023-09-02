@@ -21,11 +21,18 @@ export default function Header({cartCounter}) {
         </li>
       </ul>
      
-      <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#cartviewoffcanvasRight" aria-controls="offcanvasRight">View Cart ({cartCounter})</button>
-        <button className="btn btn-outline-success" type="submit">LOGIN</button>
+      <button
+        className="btn btn-primary"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasRight"
+        aria-controls="offcanvasRight"
+      >
+        Cart({cartCounter})
+      </button> <button className="btn btn-outline-success" type="submit">LOGIN</button>
     </div>
   </div>
 </nav>
     </di>
   )
-}
+};
