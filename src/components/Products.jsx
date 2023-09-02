@@ -4,7 +4,7 @@ import { items } from '../data/prodcutsData';
 
 export default function Products({increment}) {
   return (
-    <div className="row row-cols-1 row-cols-lg-4 row-cols-md-3 row-cols-sm-2 g-4 my-3">
+    <div className="row  row-cols-lg-4 row-cols-md-3 d-flex justify-content-around m-3">
         
     {
         items.map(item => <KfcCard key={item.id} item={item} increment={increment}/>)

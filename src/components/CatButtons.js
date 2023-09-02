@@ -3,9 +3,9 @@ import React from "react";
 export default function CatButtons() {
   return (
     <>
-    <div className="cantainer w-100 d-flex justify-content-around">
+    <div className="cantainer w-100 d-flex flex-wrap justify-content-around">
 
-      <button type="button" className="btn btn-primary">
+      <button type="button" className="btn btn-primary ">
         Primary
       </button>
       <button type="button" className="btn btn-secondary">

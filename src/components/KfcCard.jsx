@@ -4,9 +4,9 @@ export default function KfcCard({ item, increment }) {
   return (
 
     <>
-      <div className="col">
-        <div className="card bg-dark text-white" style={{ width: "15rem" }}>
-          <img src={item.image} className="card-img-top" style={{height:'13rem'}} alt="kfc card" />
+      <div className="col my-3">
+        <div className="card bg-dark text-white" style={{ width: "290px" }}>
+          <img src={item.image} className="card-img-top" style={{height:'290px'}} alt="kfc card" />
           <div className="card-body ">
             <h5 className="card-title">{item.title}</h5>
             <p className="card-text">
